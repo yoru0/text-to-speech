@@ -12,19 +12,15 @@ Notebook demonstrating speech-to-text inference with Wav2Vec2 and text-to-speech
    ```bash
    pip install -r requirements.txt
    ```
-4. Launch Jupyter and open the notebook:
-   ```bash
-   jupyter notebook main.ipynb
-   ```
 
 ## Usage
 ### Speech to Text
-- Place the audio file you want to transcribe at 	est.wav, sampled at 16 kHz (or update the path in the notebook).
+- Place the audio file you want to transcribe at `test.wav`, sampled at 16 kHz (or update the path in the notebook).
 - Run the "Speech To Text" section to load the Wav2Vec2 model, tokenize the waveform, and decode the predicted transcript.
 
 ### Text to Speech
 - Update the example text string and execute the "Text To Speech" cells to synthesise audio with gTTS.
-- The resulting MP3 file is written to the working directory (default english.mp3).
+- The resulting MP3 file is written to the working directory (default `english.mp3`).
 
 ## Notes
 - Hugging Face models download on first run; ensure internet connectivity for the initial execution.
